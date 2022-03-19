@@ -40,61 +40,61 @@ void UniLink::Menu() {
 	cout << "\n1. Log in \n2. Quit";
 	cout << "\nEnter your choice: ";
 	cin >> choice;
-	if (choice == 1)
-	{
-		//variable names
-		string user,name,des,venue,date;
-		int cap;
-		double ap, mr;
-		cout << "\nEnter username : ";
-		cin >> user;
-		do {
-			cout << "** Student Menu **\n";
-			MenuPrint();
-			cin >> choice;
-			switch (choice)
-			{
-			case 1:
-				Regrow();
-				cout << "\nEnter details of Event Below";
-				cout << "\nName: ";
-				cin >> name;
-				cout << "\nDescription: ";
-				cin >> des;
-				cout << "\n Venue: ";
-				cin >> venue;
-				cout << "\nDate:";
-				cin >> date;
-				cout << "\nCapacity: ";
-				cin >> cap;
-				ptr[NoPosts - 1] = new Event(name,des,user,venue,date,cap);
-				cout << "\nSucess: Your Event has been created with id " <<
-					ptr[NoPosts - 1]->getiD();
-				break;
-			case 2:
-				Regrow();
-				cout << "\nEnter details of item to sale Below";
-				cout << "\nName: ";
-				cin >> name;
-				cout << "\nDescription: ";
-				cin >> des;
-				cout << "\n Asking Price: ";
-				cin >> ap;
-				cout << "\nMin Raise: ";
-				cin >> mr;
-				ptr[NoPosts - 1] = new Sale(name, des, user, ap, mr);
-				cout << "\nSucess: Your Event has been created with id " <<
-					ptr[NoPosts - 1]->getiD();
-				break;
-			case 3:
+	//if (choice == 1)
+	//{
+	//	//variable names
+	//	string user,name,des,venue,date;
+	//	int cap;
+	//	double ap, mr;
+	//	cout << "\nEnter username : ";
+	//	cin >> user;
+	//	do {
+	//		cout << "** Student Menu **\n";
+	//		MenuPrint();
+	//		cin >> choice;
+	//		switch (choice)
+	//		{
+	//		case 1:
+	//			Regrow();
+	//			cout << "\nEnter details of Event Below";
+	//			cout << "\nName: ";
+	//			cin >> name;
+	//			cout << "\nDescription: ";
+	//			cin >> des;
+	//			cout << "\n Venue: ";
+	//			cin >> venue;
+	//			cout << "\nDate:";
+	//			cin >> date;
+	//			cout << "\nCapacity: ";
+	//			cin >> cap;
+	//			ptr[NoPosts - 1] = new Event(name,des,user,venue,date,cap);
+	//			cout << "\nSucess: Your Event has been created with id " <<
+	//				ptr[NoPosts - 1]->getiD();
+	//			break;
+	//		case 2:
+	//			Regrow();
+	//			cout << "\nEnter details of item to sale Below";
+	//			cout << "\nName: ";
+	//			cin >> name;
+	//			cout << "\nDescription: ";
+	//			cin >> des;
+	//			cout << "\n Asking Price: ";
+	//			cin >> ap;
+	//			cout << "\nMin Raise: ";
+	//			cin >> mr;
+	//			ptr[NoPosts - 1] = new Sale(name, des, user, ap, mr);
+	//			cout << "\nSucess: Your Event has been created with id " <<
+	//				ptr[NoPosts - 1]->getiD();
+	//			break;
+	//		case 3:
 
-				default:
-					break;
-			}//switch ends
+	//			default:
+	//				break;
+	//		}//switch ends
 
-		} while (choice != 9);
-		
+	//	} while (choice != 9);
+	//	
 
-	}//main if ends
+	//}//main if ends
 
 }
